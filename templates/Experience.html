@@ -1,0 +1,337 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}Experience{% endblock %}
+{% block content %}
+<!-- Include Bootstrap CSS, Animate.css, and Google Fonts -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<section id="experience" class="py-5" style="font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #6a11cb, #2575fc);">
+    <div class="container">
+        <div class="row justify-content-center" style="margin-top:15px;">
+            <div class="col-md-12">
+                <!-- Card with Padding Update -->
+                <div class="card bg-primary text-light shadow-lg fadeInUp" style="border-radius: 15px;">
+                    <div class="card-body" style="padding-top: 40px;">
+                        <h1 class="display-4 text-light mb-4 text-center font-weight-bold">
+                            My Professional Working Experience
+                        </h1>
+                        <p class="lead text-light mb-4 text-center" style="font-size: 1.1rem;">
+                            Expert in <strong>Python ML</strong>, <strong>Deep Learning</strong>, <strong>OpenCV</strong>, <strong>PyQt5</strong>, <strong>Django</strong>, <strong>Web Design</strong>, <strong>Java</strong>, <strong>MySQL</strong>, <strong>SQLite</strong>, <strong>PostgreSQL</strong>, <strong>Firebase</strong>, and <strong>Computer Vision</strong>.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -----------------------------------------------------Experience Grid Section--------------------------------------------------------------- -->
+<section id="experience-details" class="py-5" style="background-color: #f8f9fc;">
+    <div class="container">
+        <div class="row">
+            <!-- Experience Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-4 bg-white hover-zoom-in" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body p-4">
+                        <h4 class="font-weight-bold text-primary mb-2">Python Django Developer</h4>
+                        <p class="text-muted mb-3" style="font-size: 1rem;">Bot Solution/Rawalpindi, Pakistan | 01/2023 - Present</p>
+                        <p class="card-text" style="height: 120px; overflow: hidden; text-align: justify;">
+                            Django Web Developer with 2 years of experience in Django REST API, application development, API integration, and deployment on Heroku and AWS. Skilled in back-end/front-end integration, Agile collaboration, code reviews, and debugging.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-4 bg-light hover-zoom-in" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body p-4">
+                        <h4 class="font-weight-bold text-success mb-2">Python Desktop Developer</h4>
+                        <p class="text-muted mb-3" style="font-size: 1rem;">Devomech Solution Pvt LTD/Islamabad, Pakistan | 03/2022 - 12/2022</p>
+                        <p class="card-text" style="height: 120px; overflow: hidden; text-align: justify;">
+                            Python Desktop Developer with 9 months of experience at Devo Mech Solution, specializing in MySQL, SQL Server, Firebase, SQLite, PyQt5, Tkinter, and Raspberry Pi projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-4 bg-gradient-info text-white hover-zoom-in" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body p-4">
+                        <h4 class="font-weight-bold text-white mb-2">Python AI, NLP, ML Practitioner</h4>
+                        <p class="text-white mb-3" style="font-size: 1rem;">Data Mites Global Institutes Online | 06/2021 - 02/2022</p>
+                        <p class="card-text" style="height: 120px; overflow: hidden; text-align: justify;">
+                            Certified Python AI, NLP, and ML Practitioner with 8 months of online training from Data Mites Global Institutes. Skilled in NumPy, Pandas, TensorFlow, Scikit-learn, Keras, OpenCV, and NLP.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Card 4 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-lg border-0 rounded-4 bg-gradient-warning text-dark hover-zoom-in" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body p-4">
+                        <h4 class="font-weight-bold text-dark mb-2">Database Developer & Design</h4>
+                        <p class="text-muted mb-3" style="font-size: 1rem;">Blue Bird Institute - Hangu, Pakistan | 01/2018 - 05/2021</p>
+                        <p class="card-text" style="height: 120px; overflow: hidden; text-align: justify;">
+                            Two years of experience in database development and design at Blue Bird Institute, with hands-on experience working with MySQL Server, SQL Server, PostgreSQL, and SQLite databases.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Bootstrap 5 and AOS library -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        once: true,
+        duration: 1000,
+    });
+</script>
+
+<!-- Add custom CSS for hover zoom effect -->
+<style>
+    .hover-zoom-in:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+
+<!-- Add custom CSS for gradient colors -->
+<style>
+    .bg-gradient-info {
+        background: linear-gradient(to right, #00c6ff 0%, #0072ff 100%);
+    }
+    .bg-gradient-warning {
+        background: linear-gradient(to right, #f46b45 0%, #eea849 100%);
+    }
+    .bg-light {
+        background-color: #f9f9fc !important;
+    }
+    .text-muted {
+        color: #6c757d !important;
+    }
+    .text-dark {
+        color: #343a40 !important;
+    }
+    .text-primary {
+        color: #007bff !important;
+    }
+    .text-success {
+        color: #28a745 !important;
+    }
+</style>
+<!-- -----------------------------------------------------Experience Grid Section--------------------------------------------------------------- -->
+<section id="skills" class="py-5" style="background-color:rgba(180, 243, 32, 0.88);">
+    <div class="container text-center">
+        <h2 class="text-danger mb-4 font-weight-bold">Skills & Tools</h2>
+        <div class="row justify-content-center">
+            <!-- Skill Cards -->
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Python</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Django</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Rest API</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">AWS AP</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Machine Learning</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Deep Learning</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">AI</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">NLP</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Numpy</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Matplotlib</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Pandas</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">TensorFlow</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Scikit-learn</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">XGBoost</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Lite Stream</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">PyQt5</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">SQL MySQL Server</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">PostgreSQL</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">HTML</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">CSS</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Bootstrap</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">JavaScript</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">React Native</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">SQLite DB</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">XAMPP Server</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Firebase</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Database Design</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Database Development</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Java Desktop</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">OpenCV</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">Spacy</h4>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="skill-card p-4 border-radius-10 bg-light shadow-sm hover-shadow">
+                    <h4 class="text-primary font-weight-bold">NLTK</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Include Bootstrap and custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Link to AOS (Animate On Scroll Library) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration in ms
+        once: true // Animation happens only once when scrolled into view
+    });
+</script>
+
+<!-- CSS for Animations and Hover Effects -->
+<style>
+    .experience-card, .skill-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experience-card:hover, .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .hover-shadow {
+        transition: all 0.3s ease;
+    }
+</style>
+
+{% endblock %}

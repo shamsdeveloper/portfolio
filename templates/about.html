@@ -1,0 +1,171 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}About Me{% endblock %}
+{% block content %}
+<!-- Include Bootstrap CSS, Animate.css, and Google Fonts -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<section id="about" class="py-5" style="font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #6a11cb, #2575fc);">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="col-md-4">
+            <h1 class="display-4 text-light" style="margin-top:10px;">About Me</h1>
+        </div>
+        <!-- Profile Image and Description Section -->
+        <div class="row align-items-center">
+            <!-- Profile Image Section (Left) -->
+            <div class="col-md-4 mb-4 mb-md-6 text-center">
+                <img src="{% static 'Images/shams.jpg' %}" alt="Profile Picture" class="img-fluid rounded-circle shadow-lg animate__animated animate__fadeInLeft" style="width: 300px; height: 300px;">
+            </div>
+            <!-- About Me Description (Right) -->
+            <div class="col-md-6">
+                <h2 class="mb-4 text-light">Hello!</h2>
+                <p class="text-light" style="font-size: 1.1rem; text-align: justify;">
+                    I am a dedicated, punctual, and honest individual, always eager to learn and grow. With substantial experience in Python, Django, Java, and both database and web development/design, I have a solid foundation in programming and development.
+                    My expertise extends to full-stack development, JavaScript, Bootstrap, and Figma, enabling me to work confidently across various aspects of a project. Having completed several individual projects, I am constantly seeking new challenges and opportunities to further develop my skills.
+                    I am enthusiastic about contributing to a dynamic organization that fosters growth, collaboration, and career advancement.
+                </p>
+                <a href="#projects" class="btn btn-light btn-lg mt-4">View My Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- My Tech Stack Section -->
+<section id="tech-stack" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="text-secondary mb-4">My Tech Stack</h2>
+        <div class="row">
+            <!-- Technology Items -->
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/B.png' %}" alt="Bootstrap" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/css.png' %}" alt="CSS" class="img-fluid" style="height: 80px; width: auto;">
+                <p>CSS</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/html.png' %}" alt="HTML" class="img-fluid" style="height: 80px; width: auto;">
+                <p>HTML</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <img src="{% static 'icon/js.png' %}" alt="JavaScript" class="img-fluid" style="height: 80px; width: auto;">
+                <p>JavaScript</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/mysql.png' %}" alt="MySQL" class="img-fluid" style="height: 80px; width: auto;">
+                <p>MySQL</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <img src="{% static 'icon/java.png' %}" alt="Java" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Java</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/python.png' %}" alt="Python" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Python</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/ml.png' %}" alt="Machine Learning" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Machine Learning</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/dl.png' %}" alt="Deep Learning" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Deep Learning</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/pyqt5.png' %}" alt="PyQt5" class="img-fluid" style="height: 80px; width: auto;">
+                <p>PyQt5</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/firebase.png' %}" alt="Firebase" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Firebase</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/django.png' %}" alt="Django" class="img-fluid" style="height: 80px; width: auto;">
+                <p>Django</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/opencv.png' %}" alt="OpenCV" class="img-fluid" style="height: 80px; width: auto;">
+                <p>OpenCV</p>
+            </div>
+            <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                <img src="{% static 'icon/react.png' %}" alt="React" class="img-fluid" style="height: 80px; width: auto;">
+                <p>React</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    AOS.init({
+        duration: 1200, // Animation duration (in ms)
+        easing: 'ease-in-out', // Easing function
+        once: true, // Whether animation should happen only once
+    });
+</script>
+
+<!-- Portfolio Statistics -->
+<section id="stats" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container text-center">
+        <h2 class="text-secondary mb-4">What I've Achieved</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up">
+                    <h1 class="text-primary display-4 fw-bold">20+</h1>
+                    <p class="text-muted">Completed Projects</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-primary display-4 fw-bold">5+</h1>
+                    <p class="text-muted">Years of Experience</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <h1 class="text-primary display-4 fw-bold">15+</h1>
+                    <p class="text-muted">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Include Bootstrap and custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    window.addEventListener('load', function() {
+        const imageElement = document.querySelector('img.animate__animated');
+        imageElement.classList.add('animate__fadeIn');
+    });
+</script>
+<!-- CSS for Animations -->
+<style>
+    .stat-card {
+        padding: 20px;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+</style>
+
+<!-- Link to AOS (Animate On Scroll Library) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration in ms
+        once: true // Animation happens only once when scrolled into view
+    });
+</script>
+
+{% endblock %}

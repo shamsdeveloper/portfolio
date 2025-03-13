@@ -1,0 +1,159 @@
+
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <!-- Quick Links and Contact Section -->
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 text-center">
+                    <h5 class="text-uppercase mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="{% url 'about_us' %}" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="{% url 'projects' %}" class="text-white text-decoration-none">Projects</a></li>
+                        <li class="mb-2"><a href="{% url 'contact' %}" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="{% url 'resume' %}" class="text-white text-decoration-none" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h5 class="text-uppercase mb-3">Get in Touch</h5>
+                    <p class="small mb-2">
+                        <i class="fas fa-envelope me-2"></i><a href="https://mail.google.com/mail/u/0/#inbox" class="text-white text-decoration-none">Email Address</a>
+                    </p>
+                    <p class="small mb-3">
+                        <i class="fas fa-phone-alt me-2"></i>+92-3359853616
+                    </p>
+                    <div class="social-links d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/shams-ur-rehman-3b4491263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white me-3" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/shamsdeveloper/DeveloperCode" target="_blank" class="text-white me-3" aria-label="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@shams_programmercodes2437" target="_blank" class="text-white me-3" aria-label="YouTube">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="text-center mt-4">
+            <hr class="text-white-50">
+            <p class="small mb-0">&copy; 2025 My Portfolio. All Rights Reserved.</p>
+            <p class="small mb-0">Built with ❤️ by <a href="{% url 'Index' %}" class="text-white text-decoration-underline">Shams Ur Rehman</a></p>
+        </div>
+    </div>
+    <style>
+        footer {
+            background-color: #212529; /* Dark background */
+            color: #f8f9fa; /* Light text color */
+        }
+
+        footer a {
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0d6efd; /* Bootstrap primary color */
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        hr {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</footer>
+<!-- Blog Section -->
+<div class="container mt-5">
+    {% load static %}
+    <h5 class="text-uppercase mb-4">Latest Blogs</h5>
+    <div class="row">
+        <!-- Blog 1: Python -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/python.jpg' %}" class="card-img-top" alt="Python Blog">
+                <div class="card-body">
+                    <h5 class="card-title">Mastering Python for Data Science</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Discover how Python is a versatile tool for data analysis, machine learning, and web development. This blog walks you through key Python libraries and tips to enhance your programming skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 2: Machine Learning -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/ml.png' %}" class="card-img-top" alt="ML Blog">
+                <div class="card-body">
+                    <h5 class="card-title">Understanding Machine Learning Algorithms</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Learn about various machine learning algorithms such as regression, classification, and clustering. Explore real-world applications and understand their importance in solving complex problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 3: Deep Learning -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/dl.png' %}" class="card-img-top" alt="DL Blog">
+                <div class="card-body">
+                    <h5 class="card-title">A Guide to Deep Learning with Neural Networks</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Explore the world of deep learning, neural networks, and how they are transforming industries. Learn to implement deep learning models using popular frameworks like TensorFlow and PyTorch.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 4: OpenCV -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/opencv.png' %}" class="card-img-top" alt="OpenCV Blog">
+                <div class="card-body">
+                    <h5 class="card-title">OpenCV for Computer Vision Projects</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Master OpenCV for computer vision applications. From image processing to object detection, learn how OpenCV can be used in various real-time projects to solve complex visual tasks.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 5: PyQt5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/pyqt5.png' %}" class="card-img-top" alt="PyQt5 Blog">
+                <div class="card-body">
+                    <h5 class="card-title">Building Desktop Applications with PyQt5</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Learn how to build interactive desktop applications using PyQt5. This blog introduces the Qt framework and guides you through the creation of intuitive user interfaces for Python-based apps.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog 6: Django -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'Images/download.png' %}" class="card-img-top" alt="Django Blog">
+                <div class="card-body">
+                    <h5 class="card-title">Building Robust Web Applications with Django</h5>
+                    <p class="card-text" style="text-align: justify;">
+                        Discover the power of Django, the web framework for Python. This blog dives deep into Django's architecture and demonstrates how to build scalable and secure web applications with ease.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

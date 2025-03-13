@@ -1,0 +1,442 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<!-- Include Bootstrap CSS, Animate.css, and Google Fonts -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<section id="projects" class="py-5" style="font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #6a11cb, #2575fc);">
+    <div class="container">
+        <!-- Section Content -->
+        <!-- Card Section -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-30">
+                    <div class="card bg-danger text-light shadow-lg fadeInUp" style="border-radius: 15px; padding:0px;">
+                        <div class="card-body">
+                            <h1 class="display-4 text-light mb-4" style="text-align:center;font-weight:bold; font-family:'Times New Roman',Tahoma,Geneva,Verdana,sans-serif;">
+                                My Projects
+                            </h1>
+                            <p class="lead text-light mb-4" style="font-size: 1.1rem;">
+                                Proficiency in <strong>Python ML</strong>, <strong>Django</strong>, <strong>Deep Learning</strong>, <strong>OpenCV</strong>, <strong>Flask</strong>, <strong>Desktop Apps</strong>, <strong>MySQL</strong>, <strong>SQL Server</strong>, <strong>PostgreSQL</strong>, and <strong>Firebase</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------------------------------------------------Projects Grid-------------------------------------------------------------------------------------- -->
+<div class="row mt-4">
+    <!-- Project 1 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'project/Python_Project1.png' %}" alt="Project 1" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django Students Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">A web-based application built with Django to 
+                    efficiently manage student data, including registration, attendance, 
+                    grades,and course enrollment,streamlining administrative tasks for educational institutions.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="200">
+            <img src="{% static 'project/Python_Project2.png' %}" alt="Project 2" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django College Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">
+                    Django College Management System is a web app for managing student and faculty data, courses,
+                    attendance, grades, fees, timetables, library, and events.It provides secure, role-based access 
+                    for administrators, teachers, and students.            
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project3.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django Online_LMS Management System</h5>
+                <p class="text-muted"style="text-align:justify;height:140px;">
+                    Django-based Online LMS Management System for managing courses, users, assignments, 
+                    and grades with authentication, role-based access, and responsive design. Designed for 
+                    scalability, security, and efficient e-learning.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 4 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project4.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django E-commerce Website</h5>
+                <p class="text-muted"style="text-align:justify;height:140px;">
+                    A Django E-commerce Website is an online platform built using the Django framework, 
+                    designed to facilitate buying and selling products or services. 
+                    It typically includes user authentication, product listings, 
+                    shopping carts, and secure payment integration.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 5 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project5.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django Shope Management System</h5>
+                <p class="text-muted"style="text-align:justify;height:115px;">
+                    A Django Shop Management System manages products, inventory, orders, and sales, 
+                    streamlining shop operations with features like product updates and report generation.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 6-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project6.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django Library Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    A Django Library Management System is a web app for managing library 
+                    operations, including adding books,
+                     issuing/returning books, tracking borrowers, maintaining a catalog, 
+                     and managing user interactions efficiently.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 7-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project7.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Django Inventory Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    A Django Inventory Management System tracks stock levels, sales, 
+                    and purchases with features like CRUD operations, 
+                    user authentication, inventory reporting, and integration with a database (e.g., SQLite, MySQL).
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 8-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project8.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Python Desktop Online Car Inventory System</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    A Python Desktop Online Car Inventory Management System tracks car stock, sales, 
+                    and purchases with features like CRUD operations, user authentication, 
+                    and database integration on the Firebase Store.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 9 -->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project9.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Python Desktop Point of Sale Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    A Python Desktop POS System manages sales, inventory, 
+                    and customer interactions, featuring product management,
+                    order processing, payment handling, and sales reporting with SQLite DB.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 10-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project10.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Finger Nail Disease Detection Using DIP</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    Finger Nail Disease Detection using DIP analyzes nail images for diseases 
+                    through segmentation, feature extraction, and classification, 
+                    requiring image datasets, processing algorithms, and a classifier.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 11-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project11.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Brain Tumor Detection Using CNN</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    Brain tumor detection using CNN involves training a model on labeled medical
+                    images to classify tumors,
+                    requiring data pre-processing, CNN architecture, and performance evaluation.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 12-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project12.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Python Face Eye Detection</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">
+                    Python Face and Eye Detection involves using computer vision libraries like OpenCV 
+                    to detect faces and eyes in images or video.
+                    typically requires pre-trained classifier and Python packages such as OpenCV for image processing.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 13-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Java_Project1.PNG' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Java Advanced Inventory Management System</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">
+                    A Java Advanced Inventory Management System manages inventory, orders, 
+                    and sales with real-time updates, 
+                    reporting, and multi-user access, supported by a database for product data and transactions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 14-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Java_Project2.PNG' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Java Statistics Desktop Application</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">
+                    A Java Statistics Desktop Application is a GUI-based software for 
+                    statistical analysis, 
+                    featuring data storage integration and functions like mean, median, 
+                    variance, and hypothesis testing.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 15-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Java_Project3.PNG' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Java AI Desktop Fake&Real_Image_Detector</h5>
+                <p class="text-muted"style="text-align:justify;height:140px;">
+                    The "Java AI Desktop Fake & Real Image Detector" is a 
+                    Java-based desktop app that uses AI for real-time 
+                    fake image detection, incorporating image processing and machine learning algorithms.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 16-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Java_Project4.PNG' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">Java Desktop Library_Management_System</h5>
+                <p class="text-muted"style="text-align:justify;height:120px;">
+                    A Java Desktop Library Management System is a GUI application for managing library tasks 
+                    (checkout, returns, inventory)
+                     using Java, MySQL, and features like user authentication and book categorization.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 17-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/My_portfolio1.png' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">My Portfolio Website</h5>
+                <p class="text-muted" style="text-align:justify;height:140px;">
+                    This is a developer portfolio website showcasing expertise in 
+                    machine learning, AI, and Python development,
+                    with projects on traffic volume prediction and pharmacokinetics analysis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Project 17-->
+    <div class="col-md-4 mb-4">
+        <div class="project-card shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="{% static 'project/Python_Project13.jpg' %}" alt="Project 3" class="img-fluid rounded project-img">
+            <div class="p-3">
+                <h5 class="text-dark">STOCK INDEX’S TRADING BY MACHINE LEARNING ANALYSIS</h5>
+                <p class="text-muted" style="text-align:justify;height:118px;">
+                    The project uses machine learning to predict stock index movements 
+                    and optimize trading strategies based on historical data and market indicators.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- --------------------------------------------------------------------------------Projects Grid-------------------------------------------------------------------------------------- -->
+<!-- Portfolio Statistics -->
+<section id="stats" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container text-center">
+        <h2 class="text-secondary mb-4">What I've Achieved</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up">
+                    <h1 class="text-primary display-4 fw-bold">20+</h1>
+                    <p class="text-muted">Completed Projects</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-primary display-4 fw-bold">5+</h1>
+                    <p class="text-muted">Years of Experience</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <h1 class="text-primary display-4 fw-bold">15+</h1>
+                    <p class="text-muted">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Bootstrap and custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Link to AOS (Animate On Scroll Library) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration in ms
+        once: true // Animation happens only once when scrolled into view
+    });
+</script>
+<script>
+    // JavaScript to trigger animation on load
+    $(document).ready(function() {
+        $(".fadeInUp").each(function(index) {
+            $(this).delay(index * 300).queue(function(next) {
+                $(this).addClass('fadeInUp');
+                next();
+            });
+        });
+    });
+</script>
+
+<!-- CSS for Animations -->
+<style>
+    .stat-card {
+        padding: 20px;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Zoom effect on hover for project images */
+    .project-card img {
+        transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+        transform: scale(1.1);
+    }
+    .project-img {
+        width: 100%;
+        height: 200px; /* Fixed height to ensure consistency */
+        object-fit: cover; /* Ensures the image covers the space without distortion */
+    }
+    
+    /* Optional: Adjust card height for mobile view */
+    @media (max-width: 767px) {
+        .project-img {
+            height: 150px; /* Adjust height for smaller screens */
+        }
+    }
+    .project-card {
+        background-color: #ffffff; /* Ensures the text background is white for better contrast */
+        border-radius: 10px; /* Optional: Adds rounded corners to the card */
+        overflow: hidden; /* Prevents text from overflowing the card */
+        position: relative;
+    }
+    
+    .project-img {
+        width: 100%;
+        height: 200px; /* Fixed height for image consistency */
+        object-fit: cover;
+    }
+    
+    /* Text color for the card content */
+    .project-card .p-3 {
+        color: #333333; /* Darker text for good contrast */
+    }
+    
+    /* Ensure title and description are clearly visible */
+    .project-card h5 {
+        color: #000000; /* Dark color for the title */
+        font-weight: bold;
+    }
+    
+    .project-card p {
+        color: #555555; /* Lighter color for description text */
+    }
+    
+    /* Optional: Add a subtle text shadow for better readability on images with light backgrounds */
+    .project-card h5, .project-card p {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Mobile responsiveness adjustments */
+    @media (max-width: 767px) {
+        .project-img {
+            height: 150px; /* Adjust image height for smaller screens */
+        }
+    }
+    /* Ensure background contrast */
+    .bg-dark-custom {
+        background-color: #343a40;
+    }
+
+    /* Optional, add custom spacing or typography if desired */
+    .lead {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    /* Custom Animation */
+    .fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    
+</style>
+
+{% endblock %}

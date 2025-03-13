@@ -1,0 +1,109 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}Education{% endblock %}
+{% block content %}
+
+<!-- Include Bootstrap CSS, Google Fonts, and Animate.css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<section id="education" class="py-5" style="font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #2c3e50, #3498db);">
+    <div class="container">
+        <div class="row justify-content-center" style="margin-top:15px;">
+            <div class="col-md-10">
+                <div class="card shadow-lg bg-primary text-white rounded-4 animate__animated animate__fadeInUp">
+                    <div class="card-body text-center p-5">
+                        <h1 class="display-4 font-weight-bold">My Academic Journey</h1>
+                        <p class="lead mt-3" style="font-size: 1.2rem;">Explore my educational achievements, certifications, and learning experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Details Section -->
+<!-- Education Details Section -->
+<section id="education-details" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-primary font-weight-bold mb-5">Education History</h2>
+        <div class="row g-4">
+            <!-- BS Computer Science -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg rounded-4 position-relative h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box bg-primary text-white rounded-circle mb-3 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark">BS Computer Science</h4>
+                        <p class="text-muted mb-1">06/2022</p>
+                        <p class="text-muted mb-1">ICP & University of Peshawar</p>
+                        <p class="card-text text-muted mb-0">Peshawar</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Intermediate (ICS) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg rounded-4 position-relative h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box bg-success text-white rounded-circle mb-3 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-book-open fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark">Intermediate (ICS)</h4>
+                        <p class="text-muted mb-1">06/2018</p>
+                        <p class="text-muted mb-1">Govt. Higher Secondary School Doaba</p>
+                        <p class="card-text text-muted mb-0">Hangu</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Matriculation -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg rounded-4 position-relative h-100">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box bg-warning text-white rounded-circle mb-3 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-school fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold text-dark">Matriculation</h4>
+                        <p class="text-muted mb-1">06/2016</p>
+                        <p class="text-muted mb-1">Govt. High School Karbogha Sharif Hangu</p>
+                        <p class="card-text text-muted mb-0">Hangu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add styles for the icon box and hover effect -->
+<style>
+    .icon-box {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+
+<!-- Include Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Include AOS library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+<!-- Add hover zoom CSS -->
+<style>
+    .hover-zoom-in:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+{% endblock %}

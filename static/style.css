@@ -1,0 +1,19 @@
+/* Custom CSS */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}

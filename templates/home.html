@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<!-- Include Bootstrap CSS, Animate.css, and Google Fonts -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<header id="home" class="vh-150 d-flex align-items-center justify-content-center text-white" style="background: linear-gradient(to right, #6a11cb, #2575fc); font-family: 'Poppins', sans-serif;">
+    <div class="container text-center">
+        <!-- Circular logo with fade-in animation -->
+        <img src="{% static 'Images/shams.jpg' %}" alt="Logo" class="rounded-circle mb-4" id="logo" style="width:200px;height:200px;margin-top:90px;">
+        <!-- Title with slide-in animation -->
+        <h1 class="display-4" id="title" style="font-family: 'Roboto', sans-serif; font-weight: 700;">Welcome to My Personal Portfolio</h1>
+        <!-- New Text with bounce-in animation -->
+        <p class="mt-4" id="intro-text" style="font-family: 'Roboto', sans-serif;">Hi, my name is</p>
+        <h2 class="mt-2" id="name" style="font-family: 'Poppins', sans-serif; font-weight: 600;">Shams Ur Rehman</h2>
+        <p class="mt-2" id="job" style="font-family: 'Roboto', sans-serif;">I am a Multi Area Python Developer</p>
+        <!-- Button with zoom-in animation -->
+        <a href="#about" class="btn btn-light btn-lg mt-3" id="learn-more">Learn More</a>
+
+        <!-- Project Numbers Section -->
+        <div class="mt-5">
+            <h3 class="animate__animated animate__fadeIn animate__delay-6s" style="font-family: 'Poppins', sans-serif;">Projects Completed</h3>
+            <div class="d-flex justify-content-center">
+                <div class="count-container animate__animated animate__zoomIn animate__delay-7s">
+                    <h1 id="project-count" style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 60px;">0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Include Bootstrap and custom JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    window.addEventListener('load', function() {
+        document.getElementById('logo').classList.add('animate__animated', 'animate__fadeIn');
+        document.getElementById('title').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s');
+        document.getElementById('intro-text').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-2s');
+        document.getElementById('name').classList.add('animate__animated', 'animate__bounceIn', 'animate__delay-3s');
+        document.getElementById('job').classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-4s');
+        document.getElementById('learn-more').classList.add('animate__animated', 'animate__zoomIn', 'animate__delay-5s');
+        // Animate the project count number
+        let countElement = document.getElementById('project-count');
+        let targetCount = 20; // Set the target number for projects completed
+        let currentCount = 0;
+        function incrementCounter() {
+            if (currentCount < targetCount) {
+                currentCount++;
+                countElement.innerText = currentCount;
+                setTimeout(incrementCounter,50); // Adjusted speed for a slower start
+            }
+        }
+        // Start counting when page is loaded
+        setTimeout(incrementCounter, 1500); // Delay start of count
+    });
+</script>
+{% endblock %}
